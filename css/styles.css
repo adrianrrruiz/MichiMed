@@ -141,8 +141,11 @@ mark {
     border-radius: 0.5rem;
 }
 
+.content button {
+    margin-top: 1.5rem;
+}
+
 button {
-    margin-top: 2rem;
     background-color: var(--white);
     color: var(--text-secondary);
     font-weight: bold;
