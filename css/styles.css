@@ -53,6 +53,10 @@ nav {
     height: 40px;
 }
 
+.logo img:hover {
+    cursor: pointer;
+}
+
 nav ul {
     display: flex;
     list-style-type: none;
@@ -116,16 +120,6 @@ main {
     background-size: cover;
     background-position: center;
     transition: opacity 1s ease-in-out;
-}
-
-
-.slide {
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-.slide.active {
-    opacity: 1;
 }
 
 #hero .content {

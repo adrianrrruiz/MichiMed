@@ -10,3 +10,10 @@ function nextSlide() {
 
 slides[currentSlide].classList.add('active');
 setInterval(nextSlide, 5000);
+
+
+//Recargar al darle click en el logo
+const logo = document.querySelector('.logo');
+logo.addEventListener('click', () => {
+    location.reload();
+});
