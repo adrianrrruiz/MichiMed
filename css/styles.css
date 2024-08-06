@@ -111,7 +111,7 @@ main {
     height: 100%;
     display: flex;
     z-index: 0;
-    animation: slide 15s infinite;
+    transition: transform 0.5s ease-in-out;
 }
 
 #hero .slide {
@@ -119,7 +119,6 @@ main {
     height: 100%;
     background-size: cover;
     background-position: center;
-    transition: opacity 1s ease-in-out;
 }
 
 #hero .content {
@@ -163,17 +162,6 @@ button:hover {
     background-color: var(--text-secondary);
     color: var(--white);
 }
-
-@keyframes slide {
-    0% { transform: translateX(0%); }
-    33% { transform: translateX(0%); }
-    38% { transform: translateX(-100%); }
-    71% { transform: translateX(-100%); }
-    76% { transform: translateX(-200%); }
-    100% { transform: translateX(-200%); }
-}
-
-
 
 /* SERVICES */
 #online-services {
@@ -267,6 +255,7 @@ button:hover {
     margin-top: 20px;
 }
 
+/* CONTACT */
 #contact-email {
     display: flex;
     flex-direction: column;
@@ -347,8 +336,7 @@ form button:hover {
     height: 200px;
 }
 
-
-
+/* FOOTER */
 footer {
     background-color: var(--white);
     color: var(--text-secondary);
