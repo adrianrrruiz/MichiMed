@@ -182,14 +182,10 @@ button:hover {
 
 
 /* SERVICES */
-#online-services {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    display:flex;
-    flex-direction: column;
-    align-items: start;
-    width: 100%;
-}
+
+
+
+
 
 #online-services button {
     margin-top: 20px;
@@ -198,6 +194,7 @@ button:hover {
 .service-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 2fr;
     gap: 2rem;
     width: 100%;
     margin-top: 2rem;
@@ -222,6 +219,16 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.service-grid :hover {
+    background-color: var(--terciary-color);
+    cursor: pointer;
+    transform: scale(1.2, 1.2)
+}
+
+.service-item :hover {
+    transform: none;
 }
 
 .service-item img {
@@ -291,6 +298,7 @@ button:hover {
 
 #contact-email button {
     margin-top: 20px;
+    justify-self: center;
 }
 
 
@@ -342,7 +350,10 @@ form input::placeholder{
 
 form button {
     background-color: var(--secondary-color);
-    color: var(--text-color)
+    color: var(--text-color);
+    align-self: center;
+    max-width: 100%;
+    width: 100%;
 }
 
 form button:hover {
@@ -404,15 +415,15 @@ footer {
     }
 }
 
-
-#online-services, .service-grid, #additional-services .adservice-item{
+  .service-grid, #additional-services .adservice-item{
     margin: 50px auto; 
-    max-width: 90%; 
+    max-width: 100%; 
     padding: 1px;  
     text-align: center; 
     min-width: 20%;
     flex-wrap: wrap;  
     justify-content: center; 
+    height: 50%;
   }
   
   .adservice-item {
@@ -438,12 +449,23 @@ footer {
   }
 
 
-  #online-services p, h2, button{
-    text-align: center; /* Center the text horizontally */
-    margin: 0 auto; /* Center the text block horizontally */
-    max-width: 100%; /* Set a maximum width to prevent the text from taking up too much space */
+  #online-services p, button{
+    text-align: flex-start; 
+    max-width: 100%;
+
+    margin-top: 27px;
+    margin-bottom: 20px;
+    max-width: 60%;
+    
+  }
+
+  #online-services h2{
+    font-size: 300%;
+    margin-top:  40px;
   }
   
+
+
 
   .email-item {
     border-radius: 38px;
