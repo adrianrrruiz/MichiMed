@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 :root {
     --primary-color: #7FA1C3;
     --secondary-color: #E2DAD6;
@@ -14,7 +16,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 16px;
     line-height: 1.6;
     color: var(--text-color);
@@ -40,6 +42,11 @@ nav {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
     height: 40px;
 }
@@ -62,15 +69,16 @@ nav ul li a {
 /* HERO */
 #hero {
     position: relative;
-    background-image: url('../assets/img/bg_hero.jpg');
-    background-size: cover;
-    background-position: center;
+    /* background-image: url('../assets/img/bg_hero.jpg'); */
+    /* background-size: cover; */
+    /* background-position: center; */
     height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding: 0 5%;
+    overflow: hidden;
     color: var(--white);
 }
 
@@ -84,6 +92,39 @@ nav ul li a {
     z-index: 1;
 }
 
+#hero .carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 0;
+    animation: slide 15s infinite;
+}
+
+#hero .slide {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+#hero .content {
+    position: relative;
+    z-index: 2;
+}
+
 #hero h1, #hero p, #hero button {
     position: relative;
     z-index: 2;
@@ -94,27 +135,40 @@ nav ul li a {
     margin-bottom: 1rem;
 }
 
-#hero p {
-    text-decoration: b;
-    text-decoration-color: var(--primary-color);
+mark{
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.25rem;
+    border-radius: 0.5rem;
 }
 
 button {
-    background-color: var(--primary-color);
-    color: var(--white);
+    margin-top: 2rem;
+    background-color: var(--white);
+    color: var(--text-secondary);
+    font-weight: bold;
     border: none;
     padding: 0.75rem 1.5rem;
-    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     border-radius: 40px;
-
 }
 
 button:hover {
-    background-color: #3A80D2;
+    background-color: var(--text-secondary);
+    color: var(--white);
 }
 
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    33% { transform: translateX(0%); }
+    38% { transform: translateX(-100%); }
+    71% { transform: translateX(-100%); }
+    76% { transform: translateX(-200%); }
+    100% { transform: translateX(-200%); }
+}
+
+/* SERVICES */
 #online-services {
     margin-top: 20px;
     display:flex;
