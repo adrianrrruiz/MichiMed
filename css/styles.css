@@ -4,6 +4,7 @@
     --terciary-color: #F5EDED;
     --text-color: #121417;
     --text-secondary: #637387;
+    --text-terciary: #ACAFCA;
     --white: #FFFFFF;
     --gray: #757575;
 }
@@ -66,8 +67,7 @@ nav ul li a {
 }
 
 #hero {
-    /* background-image: url('path-to-hero-image.jpg'); */
-    background-color: #000;
+    background-image: url('../assets/img/bg_hero3.jpg');
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -82,6 +82,13 @@ nav ul li a {
 #hero h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+}
+
+#hero p {
+    background-color: var(--primary-color);
+    padding-left: 10px;
+    width: 78%;
+    border-radius: 10px;
 }
 
 #hero div {
@@ -221,7 +228,7 @@ button:hover {
 
 #contact-email h2 {
     margin-bottom: 5px;
-    font-size: 2.6rem;
+    font-size: 200%;
 }
 
 #contact-email button {
@@ -301,12 +308,32 @@ footer {
     color: var(--text-secondary);
     margin: 0 0.5rem;
     font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-links .social-icon {
+    width: 28px; /* Ajusta el tamaño según tus necesidades */
+    height: 27px; /* Ajusta el tamaño según tus necesidades */
+    fill: var(--text-secondary); /* Cambia el color de relleno del SVG */
+    stroke: var(--text-secondary); /* Cambia el color del trazo del SVG */
+}
+
+.legal{
+    margin-top: 40px;
+    text-align: center;
+    color: var(--text-terciary);
 }
 
 .legal a {
-    color: var(--text-secondary);
-    margin: 0 1rem;
+    color: var(--text-terciary);
     text-decoration: none;
+    width: 20px;
+    height: 20px;
+}
+
+.copy {
+    margin-top: 20px;
+    color: var(--text-terciary);
 }
 
 @media (max-width: 768px) {
