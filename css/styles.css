@@ -24,12 +24,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
+/* HEADER */
 header {
     background-color: var(--primary-color);
     padding: 1rem;
@@ -64,8 +59,10 @@ nav ul li a {
     color: var(--secondary-color);
 }
 
+/* HERO */
 #hero {
-    background-image: url('path-to-hero-image.jpg');
+    position: relative;
+    background-image: url('../assets/img/bg_hero.jpg');
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -77,9 +74,29 @@ nav ul li a {
     color: var(--white);
 }
 
+#hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según tus necesidades */
+    z-index: 1;
+}
+
+#hero h1, #hero p, #hero button {
+    position: relative;
+    z-index: 2;
+}
+
 #hero h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+}
+
+#hero p {
+    text-decoration: b;
+    text-decoration-color: var(--primary-color);
 }
 
 button {
@@ -96,6 +113,7 @@ button:hover {
     background-color: #3A80D2;
 }
 
+/* SERVICES */
 #online-services, #additional-services {
     padding: 4rem 0;
 }
