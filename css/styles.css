@@ -22,7 +22,6 @@ body {
     color: var(--text-color);
     display: flex;
     flex-direction: column;
-
 }
 
 html {
@@ -69,9 +68,6 @@ nav ul li a {
 /* HERO */
 #hero {
     position: relative;
-    /* background-image: url('../assets/img/bg_hero.jpg'); */
-    /* background-size: cover; */
-    /* background-position: center; */
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -88,7 +84,7 @@ nav ul li a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según tus necesidades */
+    background: rgba(0, 0, 0, 0.5); 
     z-index: 1;
 }
 
@@ -135,7 +131,7 @@ nav ul li a {
     margin-bottom: 1rem;
 }
 
-mark{
+mark {
     background-color: var(--primary-color);
     color: var(--white);
     padding: 0.25rem;
@@ -171,32 +167,28 @@ button:hover {
 /* SERVICES */
 #online-services {
     margin-top: 20px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 60%;
 }
 
-#online-services button{
+#online-services button {
     margin-top: 20px;
 }
 
-#additional-services {
-    justify-self: center;
-    height: 200px;
-    display: grid;
-    grid-template-columns: 370px 370px 370px;
-    grid-template-rows: 100%;
-    gap: 1rem;
-    width: 100%;
-    margin-bottom: 40px;
-}
-
 .service-grid {
-    height: 200px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: 100%;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 70px;
+}
+
+#additional-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     width: 100%;
     margin-top: 2rem;
@@ -206,23 +198,29 @@ button:hover {
 .service-item {
     background-color: var(--secondary-color);
     padding: 1.5rem;
-    height: 100%;
+    height: 200px;
     border-radius: 10px;
     text-align: center;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .service-item img {
-    width: 20px;
-    height: 20px;
+    width: 15%;
+    height: 150px;
     margin-bottom: 1rem;
+    border-radius: 10px;
 }
 
 .service-item p {
-    text-align: start;
+    text-align: center;
     color: var(--text-secondary);
+}
+
+/* CONTACT */
+#contact-email {
+    text-align: center;
 }
 
 #contact {
@@ -245,6 +243,7 @@ input, textarea {
     border-radius: 5px;
 }
 
+/* FOOTER */
 footer {
     background-color: var(--primary-color);
     color: var(--white);
@@ -268,8 +267,50 @@ footer {
     nav ul {
         display: none;
     }
-    
+
     #hero {
         height: 300px;
     }
 }
+
+
+#online-services, .service-grid, #additional-services .adservice-item{
+    margin: 50px auto; 
+    max-width: 90%; 
+    padding: 1px;  
+    text-align: center; 
+    min-width: 20%;
+    flex-wrap: wrap;  
+    justify-content: center; 
+  }
+  
+  .adservice-item {
+    padding: 1.5rem;
+    flex-basis: 30%; /* Set the width of each item to 30% of the parent element */
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .adservice-item img {
+    width: 100%; /* Make the image width relative to its parent */
+    height: 20vh; /* Make the image height relative to the viewport height */
+    margin-bottom: 1rem;
+    border-radius: 10px;
+  }
+  
+  .adservice-item p {
+    text-align: center;
+    color: var(--text-secondary);
+  }
+
+
+  #online-services p, h2, button{
+    text-align: center; /* Center the text horizontally */
+    margin: 0 auto; /* Center the text block horizontally */
+    max-width: 80%; /* Set a maximum width to prevent the text from taking up too much space */
+  }
+  
+  
