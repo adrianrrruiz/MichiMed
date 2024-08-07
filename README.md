@@ -41,7 +41,7 @@ La landing page está diseñada para ser intuitiva y fácil de usar:
 - Información de contacto y redes sociales
 ## Contacto
 - Adrian Ruiz (adrianrrruiz@gmail.com)
-- Carlos Mejía ()
+- Carlos Mejía (mejia.carlose10@javeriana.edu.co)
 - Juan ()
 ## Estado del proyecto
 En desarrollo - Versión 1.0
