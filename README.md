@@ -4,6 +4,8 @@
 
 # MichiMed Cat Clinic - Landing Page
 
+![](https://github.com/adrianrrruiz/MichiMed/blob/main/MichiMed.gif)
+
 ## Descripción
 MichiMed Cat Clinic es una landing page para una clínica veterinaria especializada en gatos. La página presenta los servicios de la clínica, ofrece opciones de servicios en línea y proporciona un formulario de contacto para los clientes.
 
