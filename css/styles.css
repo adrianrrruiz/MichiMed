@@ -412,27 +412,28 @@ footer {
     height: 50%;
   }
   
-  .adservice-item {
-    padding: 1.5rem;
+  .additional_service-item {
     flex-basis: 30%; /* Set the width of each item to 30% of the parent element */
     border-radius: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
   
-  .adservice-item img {
+  .additional_service-item img {
     width: 100%; /* Make the image width relative to its parent */
-    height: 20vh; /* Make the image height relative to the viewport height */
-    margin-bottom: 1rem;
+    height: 50vh; /* Make the image height relative to the viewport height */
+    margin-bottom: 0;
     border-radius: 10px;
   }
-  
-  .adservice-item p {
-    text-align: center;
-    color: var(--text-secondary);
+
+  .additional_service-item h3 {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
   }
+
 
 
   #online-services p, button{
