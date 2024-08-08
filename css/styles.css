@@ -165,14 +165,18 @@ button:hover {
 
 /* SERVICES */
 
-
-
-
-
 #online-services button {
     margin-top: 20px;
 }
 
+.get-started-button {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.get-started-button:hover {
+    background-color: var(--text-secondary);
+}
 .service-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
